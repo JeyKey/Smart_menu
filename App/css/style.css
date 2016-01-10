@@ -1,0 +1,175 @@
+body {
+	background-color: #F3EDEA;
+}
+
+/* Header  */
+
+.header {
+	height: 100px;
+	background-color: #FFFFFF;
+	border-bottom: 2px solid #C2BEBB;
+	width: 100%;
+}
+
+/* End header  */
+/* left menu  */
+
+.left_menu {
+margin: 20px;
+}
+
+.nav-sidebar {
+    background-color: #35302d;
+    border-radius: 5px;
+    width: 283px;
+	padding-left: 5px;
+	padding-bottom:50px;
+}
+
+.nav-sidebar h5 {
+    border-bottom: 1px solid #181614;
+    color: #6d6560;
+    margin: 0;
+    margin-left: -5px;
+    padding: 30px 10px 5px 15px;
+}
+
+.nav-sidebar hr {
+    margin: 0;
+    margin-left: -5px;
+	border-top: 1px solid #5a514c;
+}
+
+.nav-sidebar  li {
+	border-bottom: 1px solid #5a514c;
+	transition: transform 0.3s;
+}
+
+.nav-sidebar .active {
+	border-left: 5px solid #e30613;
+	margin-left:-10px;
+}
+
+.nav-sidebar  li:hover {
+	border-left: 5px solid #e30613;
+	margin-left: -5px;
+	transition: transform 0.3s;
+	transform: translateX(-5px);
+}
+
+.nav-sidebar  li a {
+	padding: 20px 0px 20px 23px;
+    font-size: 1.313em;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+	line-height: 1.2;
+}
+
+.nav-sidebar  li a:hover {
+	border-radius: 5px;
+	background-color: #2d2823;
+}
+
+.nav-sidebar  li a:focus {
+	outline: none;
+	background-color: #2d2823;
+}
+
+.nav-sidebar li a .label {
+	position: absolute;
+    top: 10px;
+    right: 10px;
+    font-family: Roboto Slab;
+    font-size: 12px;
+}
+
+.icon {
+float:left;
+margin-right: 30px;
+margin-top: 5px;
+
+}
+
+.icon_hotdishes {
+  display: block;
+  text-indent: -9999px;
+  width: 36px;
+  height: 32px;
+  background: url(../img/Basket.svg);
+  background-size: 36px 32px;
+}
+
+
+
+/* End left menu  */
+
+
+
+
+
+.logo {
+	margin-left: 20px;
+	margin-top: 20px;
+}
+/* .basket {
+    background-color: #FF460C;
+    height: 98px;
+    font-family: Roboto Slab;
+    font-weight: 700;
+    font-size: 21px;
+    color: #FFFFFF;
+    display: block;
+    position: relative;
+    padding: 30px;
+    width: 235px;
+    float: right;
+}
+
+.basket:hover, .basket:focus {
+    background-color: #ff5a26;
+    color: #FFFFFF;
+	text-decoration: none;
+} */
+
+.btn-sm, .btn-group-sm > .btn {
+    padding: 8px 35px;
+    font-size: 21px;
+    line-height: 1.5;
+    border-radius: 24px;
+}
+
+.btn-default {
+    color: #857771;
+    background-color: white;
+    border-color: #857771;
+    font-family: Roboto Slab;
+    font-weight: 700;
+    border: 2px solid;
+}
+
+.cart{
+	float: right;
+    height: 48px;
+    border-left: 1px solid #fff;
+    padding-left: 15px;
+    padding-top: 5px;
+    margin-top: -7px;
+}
+
+.badge{
+	position: absolute;
+    right: 18px;
+    top: 18px;
+    background-color: #35302d;
+    font-family: Roboto Slab;
+    font-size: 18px;
+}
+
+.btn .icon{
+    margin-top: -5px;
+    margin-right: 8px;
+}
+
+.head_button {
+
+}
