@@ -6,6 +6,7 @@
 <title>Bootstrap - Prebuilt Layout</title>
 <!-- Bootstrap -->
 <link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style2.css" rel="stylesheet" type="text/css">
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,400italic,700,500" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300" rel="stylesheet" type="text/css">
@@ -17,12 +18,12 @@
 			<a href="#"><img src="img/logo.png" alt="Logo" /></a>
 		</div>
 		<div class="header-right">
-		<a href="#" class="btn_basket"><i class="fa fa-shopping-basket fa-2x"></i><p>Ваш заказ</p><span>на 4 590 тг.</span></a>
+		<a href="#" id="btn_basket-right" class="btn_basket"><i class="fa fa-shopping-basket fa-2x"></i><p>Ваш заказ</p><span>на 4 590 тг.</span></a>
 		</div>
 
 	</div>
 
-	<div class="container-fluid">
+	<div id="o-wrapper" class="container-fluid">
 		<div class="row">
 			<div class="col-md-2 left_menu">
 				<div class="row">
@@ -40,8 +41,12 @@
 			</div>
 			<div class="col-md-10 content">
 			</div>
-			<div class="basket">
-			</div>
+
+				<nav id="c-menu--slide-right" class="c-menu c-menu--slide-right">
+				  <button class="c-menu__close">Close Menu →</button>
+
+				</nav>
+				<div id="c-mask" class="c-mask"></div>
 		</div>
 	</div>
 
@@ -52,5 +57,24 @@
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.js"></script>
+<script src="js/menu.js"></script>
+<script type="text/javascript">
+/**
+	* Slide right instantiation and action.
+	*/
+ var slideRight = new Menu({
+	 wrapper: '#o-wrapper',
+	 type: 'slide-right',
+	 menuOpenerClass: '.c-button',
+	 maskId: '#c-mask'
+ });
+
+ var slideRightBtn = document.querySelector('#btn_basket-right');
+
+ slideRightBtn.addEventListener('click', function(e) {
+	 e.preventDefault;
+	 slideRight.open();
+ });
+</script>
 </body>
 </html>
