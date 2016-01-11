@@ -11,6 +11,44 @@ body {
 	width: 100%;
 }
 
+.logo {
+	padding: 20px;
+	width: 30%;
+	float: left;
+}
+
+.header-right {
+	float: right;
+	height: 100%;
+	background-color: #ff460c;
+}
+
+.header-right a {
+	font-family: Roboto Slab;
+	color: #fff;
+	padding: 20px 30px;
+}
+
+.header-right a p {
+	font-size: 21px;
+	font-weight: 600;
+	margin: 0;
+	line-height: 0.5;
+	float: left;
+}
+
+.header-right a span {
+	font-size: 16px;
+  font-weight: 400;
+}
+
+.header-right a i {
+	margin-top: 10px;
+	margin-right: 15px;
+	padding-right: 15px;
+	border-right: 1px solid #fff;
+	float: left;
+}
 /* End header  */
 /* left menu  */
 
@@ -84,9 +122,9 @@ margin: 20px;
 }
 
 .icon {
-float:left;
-margin-right: 30px;
-margin-top: 5px;
+	float:left;
+	margin-right: 30px;
+	margin-top: 5px;
 
 }
 
@@ -100,43 +138,13 @@ margin-top: 5px;
 }
 
 
-
 /* End left menu  */
 
 
 
 
 
-.logo {
-	margin-left: 20px;
-	margin-top: 20px;
-}
-/* .basket {
-    background-color: #FF460C;
-    height: 98px;
-    font-family: Roboto Slab;
-    font-weight: 700;
-    font-size: 21px;
-    color: #FFFFFF;
-    display: block;
-    position: relative;
-    padding: 30px;
-    width: 235px;
-    float: right;
-}
-
-.basket:hover, .basket:focus {
-    background-color: #ff5a26;
-    color: #FFFFFF;
-	text-decoration: none;
-} */
-
-.btn-sm, .btn-group-sm > .btn {
-    padding: 8px 35px;
-    font-size: 21px;
-    line-height: 1.5;
-    border-radius: 24px;
-}
+/* Button  */
 
 .btn-default {
     color: #857771;
@@ -147,29 +155,4 @@ margin-top: 5px;
     border: 2px solid;
 }
 
-.cart{
-	float: right;
-    height: 48px;
-    border-left: 1px solid #fff;
-    padding-left: 15px;
-    padding-top: 5px;
-    margin-top: -7px;
-}
-
-.badge{
-	position: absolute;
-    right: 18px;
-    top: 18px;
-    background-color: #35302d;
-    font-family: Roboto Slab;
-    font-size: 18px;
-}
-
-.btn .icon{
-    margin-top: -5px;
-    margin-right: 8px;
-}
-
-.head_button {
-
-}
+/* End Button  */
