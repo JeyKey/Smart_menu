@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="myApp">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>Bootstrap - Prebuilt Layout</title>
+<title>SmartMenu - Просмотр блюда</title>
 <!-- Bootstrap -->
 <link href="css/bootstrap.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet" type="text/css">
@@ -14,9 +14,11 @@
 <body>
 	<div id="gray">
 		<div class="header">
+
 			<div class="logo">
 				<a href="#"><img src="img/logo.png" alt="Logo" /></a>
 			</div>
+
 			<div class="header-right">
 				<a href="#" id="btn_basket-right" class="btn_basket"><i class="fa fa-shopping-basket fa-2x"></i><p>Ваш заказ</p><span>на 4 590 тг.</span></a>
 			</div>
@@ -25,6 +27,7 @@
 
 		<div id="o-wrapper" class="container-fluid">
 			<div class="row">
+
 				<div id="left_menu" class="col-md-2">
 					<div class="row">
 						<ul class="nav nav-sidebar">
@@ -32,24 +35,45 @@
 								<li class="active1"><a href="#"><span class="icon icon_hotdishes "></span> Горячие </br>блюда</a></li>
 								<li><a href="#"><span class="icon icon_hotdishes"></span> Холодные </br>закуски</a></li>
 								<li><a href="#"><span class="icon icon_hotdishes"></span> Десерты </br>и мороженное <span class="label label-success">New!</span></a></li>
-								<h5>НАПИТКИ</h5><hr>
+							<h5>НАПИТКИ</h5><hr>
 								<li><a href="#"><span class="icon icon_hotdishes"></span> Чайная </br>коллекция</a></li>
 								<li><a href="#"><span class="icon icon_hotdishes"></span> Алкогольные </br>напитки</a></li>
 								<li><a href="#"><span class="icon icon_hotdishes"></span> Винная </br>карта</a></li>
 							</ul>
 						</div>
 					</div>
-					<div id="content" class="col-md-10">
 
+					<div id="content" class="col-md-8 col-md-offset-1">
+						<div class="content">
+							<div class="col-md-6">
+								<div class="row">
+									<a id="arrow-left" href="#" class="arrow-left" ><i class="arrow-left-icon"></i></a>
+									<img class"plate" src="catalog\img\plate.png" alt="" />
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="row">
+									<span class="label label-success">САЛАТЫ</span>
+									<div class="info"> <i class="clock-icon">12 мин./</i> <i class="leaf-icon">203 ккал./</i> <i class="heart-icon">3 835</i></div>
+									<h1>Малахитовый браслет </br>по испански</h1>
+									<h4> ИНГРЕДИЕНТЫ:</h3>
+									<p>Филе куриной грудки,	масло оливковое,	чеснок, белый хлеб, анчоусы, салат романо, сыр пармезан, горчица, соус ворчестерский, лимоны, яйцо куриное, яичный белок.</p>
+									<hr>
+									<span class="price"><small>1 290 тг.</small> 990 <sup>тг.<sup></span>
+								</div>
+							</div>
+						</div>
 					</div>
+
 				</div>
 			</div>
 		</div>
-		<div  id="menu-basket" class="menu menu-basket">
+
+		<div id="menu-basket" class="menu menu-basket">
 
 		</div>
 		<div id="mask" class="mask"></div>
-
 
 
 <script src="js/lib/jquery-1.11.3.min.js"></script>

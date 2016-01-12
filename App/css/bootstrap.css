@@ -278,7 +278,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
@@ -341,12 +341,7 @@ img {
 .img-circle {
   border-radius: 50%;
 }
-hr {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border: 0;
-  border-top: 1px solid #eee;
-}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -460,30 +455,7 @@ h6 .small,
 .h6 .small {
   font-size: 75%;
 }
-h1,
-.h1 {
-  font-size: 36px;
-}
-h2,
-.h2 {
-  font-size: 30px;
-}
-h3,
-.h3 {
-  font-size: 24px;
-}
-h4,
-.h4 {
-  font-size: 18px;
-}
-h5,
-.h5 {
-  font-size: 14px;
-}
-h6,
-.h6 {
-  font-size: 12px;
-}
+
 p {
   margin: 0 0 10px;
 }
@@ -4087,18 +4059,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   cursor: not-allowed;
   background-color: #fff;
 }
-.label {
-  display: inline;
-  padding: .2em .6em .3em;
-  font-size: 75%;
-  font-weight: bold;
-  line-height: 1;
-  color: #fff;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: baseline;
-  border-radius: .25em;
-}
+
 a.label:hover,
 a.label:focus {
   color: #fff;
@@ -4126,13 +4087,7 @@ a.label:focus {
 .label-primary[href]:focus {
   background-color: #286090;
 }
-.label-success {
-  background-color: #5cb85c;
-}
-.label-success[href]:hover,
-.label-success[href]:focus {
-  background-color: #449d44;
-}
+
 .label-info {
   background-color: #5bc0de;
 }
