@@ -10,41 +10,45 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,400italic,700,500" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="css/font-awesome.min.css">
+
 </head>
 <body>
-	<div id="gray">
+	<div id="gray"><div id="blur">
 		<div class="header">
+			<div class="header-left">
+				<a href="#" id="btn_basket-left" class="btn_header"><i class="fa fa-shopping-basket fa-2x"></i><p>Ваш заказ</p><span>на 4 590 тг.</span></a>
+			</div>
 
 			<div class="logo">
 				<a href="#"><img src="img/logo.png" alt="Logo" /></a>
 			</div>
 
 			<div class="header-right">
-				<a href="#" id="btn_basket-right" class="btn_basket"><i class="fa fa-shopping-basket fa-2x"></i><p>Ваш заказ</p><span>на 4 590 тг.</span></a>
+				<a href="#" id="btn_basket-right" class="btn_header"><i class="fa fa-shopping-basket fa-2x"></i><p>Ваш заказ</p><span>на 4 590 тг.</span></a>
 			</div>
 
 		</div>
+		<div id="menu" class="col-md-12">
+			<div class="row">
+				<ul class="nav nav-sidebar">
+					<h5>БЛЮДА</h5><hr>
+						<li class="active1"><a href="#"><span class="icon icon_hotdishes "></span> Горячие </br>блюда</a></li>
+						<li><a href="#"><span class="icon icon_hotdishes"></span> Холодные </br>закуски</a></li>
+						<li><a href="#"><span class="icon icon_hotdishes"></span> Десерты </br>и мороженное <span class="label label-success">New!</span></a></li>
+					<h5>НАПИТКИ</h5><hr>
+						<li><a href="#"><span class="icon icon_hotdishes"></span> Чайная </br>коллекция</a></li>
+						<li><a href="#"><span class="icon icon_hotdishes"></span> Алкогольные </br>напитки</a></li>
+						<li><a href="#"><span class="icon icon_hotdishes"></span> Винная </br>карта</a></li>
+					</ul>
+				</div>
+			</div>
+
+
 
 		<div id="o-wrapper" class="container-fluid">
 			<div class="row">
-
-				<div id="left_menu" class="col-md-2">
-					<div class="row">
-						<ul class="nav nav-sidebar">
-							<h5>БЛЮДА</h5><hr>
-								<li class="active1"><a href="#"><span class="icon icon_hotdishes "></span> Горячие </br>блюда</a></li>
-								<li><a href="#"><span class="icon icon_hotdishes"></span> Холодные </br>закуски</a></li>
-								<li><a href="#"><span class="icon icon_hotdishes"></span> Десерты </br>и мороженное <span class="label label-success">New!</span></a></li>
-							<h5>НАПИТКИ</h5><hr>
-								<li><a href="#"><span class="icon icon_hotdishes"></span> Чайная </br>коллекция</a></li>
-								<li><a href="#"><span class="icon icon_hotdishes"></span> Алкогольные </br>напитки</a></li>
-								<li><a href="#"><span class="icon icon_hotdishes"></span> Винная </br>карта</a></li>
-							</ul>
-						</div>
-					</div>
-
 					<div id="content" class="col-md-8 col-md-offset-1">
-						<div class="content">
+						<div class="content" ng-controller="GetUsers">
 							<div class="col-md-6">
 								<div class="row">
 									<a id="arrow-left" href="#" class="arrow-left" ><i class="arrow-left-icon"></i></a>
@@ -68,7 +72,7 @@
 
 				</div>
 			</div>
-		</div>
+		</div></div>
 
 		<div id="menu-basket" class="menu menu-basket">
 
@@ -79,5 +83,7 @@
 <script src="js/lib/jquery-1.11.3.min.js"></script>
 <script src="js/lib/bootstrap.js"></script>
 <script src="js/lib/menu-basket.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+<script src="js/controllers/data.js"></script>
 </body>
 </html>

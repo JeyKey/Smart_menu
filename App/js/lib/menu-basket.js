@@ -30,6 +30,7 @@
     this.mask = document.querySelector(this.options.maskId);
     this.menu = document.querySelector('#menu-basket');
     this.gray = document.querySelector('#gray');
+    this.blur = document.querySelector('#blur');
     this.menuOpeners = document.querySelectorAll(this.options.menuOpenerClass);
     this._initEvents();
   };
@@ -44,6 +45,7 @@
 
   Menu.prototype.open = function() {
     this.gray.classList.add('has-active-menu');
+    this.blur.classList.add('has-active-menu-blur');
     this.wrapper.classList.add('has-' + this.options.type);
     this.menu.classList.add('is-active');
     this.mask.classList.add('is-active');
@@ -52,6 +54,7 @@
 
   Menu.prototype.close = function() {
     this.gray.classList.remove('has-active-menu');
+    this.blur.classList.remove('has-active-menu-blur');
     this.wrapper.classList.remove('has-' + this.options.type);
     this.menu.classList.remove('is-active');
     this.mask.classList.remove('is-active');
