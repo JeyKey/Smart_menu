@@ -11,6 +11,7 @@
 <!-- FONTS -->
 </head>
 <body>
+  <div id="gray"><div id="blur">
   <header>
     <div class="container-fluid">
         <div class="row">
@@ -26,7 +27,7 @@
           </div>
 
           <div class="col-md-2 atm atm_right">
-            <a href="#"><span class="badge">13</span><img src="img/basket.svg">
+            <a id="btn_basket_right" href="#"><span class="badge">13</span><img src="img/basket.svg">
               <p>ВАШ ЗАКАЗ:</p><b>19 856 <sup>тг.</sup></b>
             </a>
           </div>
@@ -53,8 +54,8 @@
     </nav>
   </header>
 
-  <div class="content">
-    ...
+  <div id="o-wrapper"  class="content">
+
   </div>
 
   <footer class="navbar-fixed-bottom">
@@ -62,12 +63,39 @@
       <a href="#">WWW.SMARTAP.KZ</a>
     </div>
   </footer>
+</div>
+</div>
 
+<div id="menu-basket" class="menu menu-basket">
+<h1>Ваш заказ Евгений</h1><h5>12 апреля 16:28</h5>
+
+<table class="table">
+  <tr>
+      <td>Группа</td>
+      <td>Название</td>
+      <td>Цена</td>
+      <td>Кол-во</td>
+      <td>Итого</td>
+      <td></td>
+  </tr>
+  <tr>
+      <td></td>
+      <td>Малахитовый салат по французки</td>
+      <td>890тг.</td>
+      <td>2</td>
+      <td>1780тг.</td>
+      <td><a href="#" class="btn"></a></td>
+  </tr>
+</table>
+
+</div>
+<div id="mask" class="mask"></div>
 <!-- JS -->
 <script src="js/lib/jquery-1.11.3.min.js"></script>
 <script src="js/lib/bootstrap.js"></script>
 <script src="js/lib/sly.min.js"></script>
 <script src="js/lib/cmd.js"></script>
+<script src="js/lib/menu-basket.js"></script>
 
 </body>
 </html>
